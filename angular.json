@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "agastya-elearning-web": {
+    "elearn": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/agastya-elearning-web",
+            "outputPath": "dist/elearn",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "agastya-elearning-web:build"
+            "browserTarget": "elearn:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "agastya-elearning-web:build:production"
+              "browserTarget": "elearn:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "agastya-elearning-web:build"
+            "browserTarget": "elearn:build"
           }
         },
         "test": {
@@ -119,11 +119,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "agastya-elearning-web:serve"
+            "devServerTarget": "elearn:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "agastya-elearning-web:serve:production"
+              "devServerTarget": "elearn:serve:production"
             }
           }
         },
@@ -134,7 +134,7 @@
       }
     }
   },
-  "defaultProject": "agastya-elearning-web",
+  "defaultProject": "elearn",
   "cli": {
     "analytics": false
   }
