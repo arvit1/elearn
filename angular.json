@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/elearn",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -29,7 +29,7 @@
             ],
             "styles": [
               "node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "node_modules/include-media/dist/_include-media.scss",
+              "node_modules/include-media/docs/_include-media.scss",
               "src/app/theme/general.scss",
               "src/app/theme/custom.theme.scss",
               "src/styles.scss"
