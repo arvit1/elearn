@@ -1,0 +1,23 @@
+@import "../../../theme/general.scss";
+.dialog {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    
+    .title {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 4vh;
+        display: flex;
+        direction: row;
+        justify-content: space-between;
+    }
+    
+    .content {
+        height: 80vh;
+        width: 100vw; 
+    }
+}

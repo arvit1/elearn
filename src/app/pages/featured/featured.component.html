@@ -1,0 +1,60 @@
+<section class="cases" [style.height]="vh / 2 + 'px'">
+  <div class="container">
+    <div class="row" *ngIf="displayedTopics">
+      <div class="cases-title">
+        <span>{{ title }}</span>
+      </div>
+      <div class="case" *ngFor="let subTopic of displayedTopics">
+        <a [routerLink]="'/course/' + subTopic.id" routerLinkActive="active">
+          <div *ngIf="subTopic.topic.categories" class="case-details">
+            <!-- <span>{{ subTopic.topic.catergories }}</span> -->
+            <span class="category-detail"
+              >{{ subTopic?.topic.categories[0].name }} -
+              {{ subTopic?.topic.name  }}</span
+            >
+            <!-- <span class="topic-detail"></span> -->
+            <h2>{{ slice(subTopic.name) }}</h2>
+          </div>
+          <div class="case-image">
+            <img src="assets/images/child.jpg" />
+            <img
+              src="{{
+                subTopic.image.formats.small
+                  ? subTopic.image.formats.small.url
+                  : 'assets/images/child.jpg'
+              }}"
+              default="assets/images/child.jpg"
+              class="img-hidden"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row aaa" *ngIf="!displayedTopics">
+      <div class="cases-title">
+        <span>{{ title }}</span>
+      </div>
+      <div class="case" *ngFor="let p of placeholder">
+        <div class="case-details">
+          <div #placeholder1 class="placeholder1">&nbsp;</div>
+          <div #placeholder2 class="placeholder2">&nbsp;</div>
+        </div>
+        <div class="case-image">
+          <img src="assets/images/placeholder.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="height: 0;">
+    <div class="cases-navigation" *ngIf="displayedTopics">
+      <div class="cases-arrow prev">
+        <arrow-left (click)="onLeftArrowClick($event)"></arrow-left>
+      </div>
+      <div class="cases-arrow next">
+        <arrow-right (click)="onRightArrowClick($event)"></arrow-right>
+      </div>
+    </div>
+  </div>
+</section>

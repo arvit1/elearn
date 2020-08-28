@@ -1,0 +1,42 @@
+<div class="header">
+  <div class="container">
+    <div class="row v-center space-between">
+      <div class="hdrlogo">
+        <a class="logo" href="#" title="Agastya E-Learning">
+          <span class="first-letter">Å</span>
+          <span>GASTYA</span></a
+        >
+      </div>
+      <div class="search-wrapper">
+        <!-- <mat-form-field
+          appearance="outline"
+          class="search"
+          [ngClass]="{ 'show-search': showSearch }"
+        >
+          <mat-icon matSuffix *ngIf="!handSet">search</mat-icon>
+          <input
+            matInput
+            placeholder="Search Courses"
+            [(ngModel)]="searchInput"
+            (keyup.enter)="search($event)"
+            (blur)="search($event)"
+            (clickOutside)="close($event)"
+          />
+        </mat-form-field>
+        <mat-icon (click)="show($event)" class="mobile-search">search</mat-icon> -->
+        <div class="nav-toggle">
+          <div *ngIf="handSet" (click)="openMenuBar()" class="hamburger-menu">
+            <span></span>
+            <span></span>
+          </div>
+          <div *ngIf="!handSet" (click)="openMenuBar()" class="hamburger-menu">
+            <button mat-stroked-button>Explore</button>
+          </div>
+          <div (click)="closeMenuBar()" class="hamburger-menu-close">
+            <uparrow-circle></uparrow-circle>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
