@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy-gh": "ng deploy --base-href /elearn.github.io/"
+    "deploy-gh": "ng deploy --base-href /"
   },
   "private": true,
   "dependencies": {
