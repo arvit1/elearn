@@ -1,5 +1,5 @@
 {
-  "name": "agastya-elearning-web",
+  "name": "elearn",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "deploy-gh": "ng build --prod --base-href \"https://arvit1.github.io/elearn/\""
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
