@@ -6,11 +6,11 @@ import { CourseDetailPageComponent } from './pages/course-detail-page/course-det
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: 'landing', component: LandingPageComponent },
+  // { path: 'landing', component: LandingPageComponent },
   { path: 'search', component: SearchPageComponent },
   { path: 'search/category/:id', component: SearchPageComponent },
   { path: 'course/:id', component: CourseDetailPageComponent },
-  { path: '', redirectTo: '/landing', pathMatch: 'full' },
+  { path: '', component: LandingPageComponent , pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 
