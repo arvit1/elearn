@@ -48,11 +48,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: 'landing', component: _pages_landing_page_landing_page_component__WEBPACK_IMPORTED_MODULE_5__["LandingPageComponent"] },
+    // { path: 'landing', component: LandingPageComponent },
     { path: 'search', component: _pages_search_page_search_page_component__WEBPACK_IMPORTED_MODULE_3__["SearchPageComponent"] },
     { path: 'search/category/:id', component: _pages_search_page_search_page_component__WEBPACK_IMPORTED_MODULE_3__["SearchPageComponent"] },
     { path: 'course/:id', component: _pages_course_detail_page_course_detail_page_component__WEBPACK_IMPORTED_MODULE_4__["CourseDetailPageComponent"] },
-    { path: '', redirectTo: '/landing', pathMatch: 'full' },
+    { path: '', component: _pages_landing_page_landing_page_component__WEBPACK_IMPORTED_MODULE_5__["LandingPageComponent"], pathMatch: 'full' },
     { path: '**', component: _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_2__["PageNotFoundComponent"] },
 ];
 class AppRoutingModule {

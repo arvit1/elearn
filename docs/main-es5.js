@@ -97,10 +97,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ./pages/landing-page/landing-page.component */
     "./src/app/pages/landing-page/landing-page.component.ts");
 
-    var routes = [{
-      path: 'landing',
-      component: _pages_landing_page_landing_page_component__WEBPACK_IMPORTED_MODULE_5__["LandingPageComponent"]
-    }, {
+    var routes = [// { path: 'landing', component: LandingPageComponent },
+    {
       path: 'search',
       component: _pages_search_page_search_page_component__WEBPACK_IMPORTED_MODULE_3__["SearchPageComponent"]
     }, {
@@ -111,7 +109,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       component: _pages_course_detail_page_course_detail_page_component__WEBPACK_IMPORTED_MODULE_4__["CourseDetailPageComponent"]
     }, {
       path: '',
-      redirectTo: '/landing',
+      component: _pages_landing_page_landing_page_component__WEBPACK_IMPORTED_MODULE_5__["LandingPageComponent"],
       pathMatch: 'full'
     }, {
       path: '**',
