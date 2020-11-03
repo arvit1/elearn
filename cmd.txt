@@ -1,2 +1,2 @@
 ng build --base-href=/elearn --deploy-url /elearn/
-https://arvit1.github.io/elea
+https://arvit1.github.io/elearn
